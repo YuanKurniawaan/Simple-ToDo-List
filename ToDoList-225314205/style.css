@@ -1,0 +1,170 @@
+/* Basic page styling */
+body {
+    background-color: #000000; /* Black background for high contrast */
+    font-family: "Courier New", Courier, monospace; /* Pixelated font look */
+    color: #ffffff; /* White text color */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center align the text and forms */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 800px; /* Fixed max-width for larger screens */
+    margin: 20px auto; /* Center align container */
+    padding: 20px;
+    background-color: #ff00ff; /* Neon magenta background */
+    border: 5px solid #00ffff; /* Neon cyan border */
+    box-shadow: 0 0 20px #ff00ff; /* Neon glow effect */
+    border-radius: 15px; /* Rounded corners */
+}
+
+/* Heading */
+h2 {
+    align-content: center;
+    width: calc(60% - 100px); /* Adjust width to fit inside container */
+    background-color: #00ffff; /* Neon cyan background */
+    color: #ff00ff; /* Neon magenta text */
+    padding: 10px;
+    font-size: 32px;
+    border-bottom: 3px solid #ff00ff; /* Neon magenta underline */
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px #ff00ff; /* Glow effect */
+}
+
+/* Form styling */
+form {
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #00ffff; /* Neon cyan label color */
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(50% - 100px); /* Adjust width to fit inside container */
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 3px solid #00ffff; /* Neon cyan border */
+    background-color: #000000; /* Black input background */
+    color: #ffffff; /* White text in inputs */
+    font-size: 16px;
+    box-shadow: 0 0 10px #00ffff; /* Neon glow effect */
+}
+
+button {
+    background-color: #ff00ff; /* Neon magenta background */
+    color: #000000; /* Black text */
+    margin-bottom: 15px;
+    padding: 7px 25px;
+    border: 3px solid #00ffff; /* Neon cyan border */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 0 10px #ff00ff; /* Neon glow effect */
+}
+
+/* List styling */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align list items to the left */
+    width: fit-content; /* Adjust width to content */
+    margin: 0 auto; /* Center align the list */
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #00ffff; /* Neon cyan text color for list items */
+}
+
+/* Links */
+a {
+    color: #ff00ff; /* Neon magenta link color */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #FF1493; /* Change to neon pink on hover */
+}
+
+
+/* Additional 80s touches */
+hr {
+    border: 1px dashed #00ffff; /* Neon cyan dashed horizontal rule */
+    margin: 20px 0; /* Add spacing around the rule */
+}
+
+/* CSS for the completed tasks */
+.completed .task-text {
+    text-decoration: line-through;
+    color: grey;
+}
+
+/* Ensures the delete button is not affected */
+.completed .delete-button {
+    text-decoration: none;
+    color: red; /* or any color you prefer */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Optional: Style the delete button separately */
+.delete-button:hover {
+    color: darkred;
+}
+
+.back-link {
+    font-size: 1.5em; /* Increase the font size */
+    color: #39FF14; /* Neon green color */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.back-link:hover {
+    color: #FF1493; /* Change to neon pink on hover */
+}
+
+footer {
+    position: absolute; /* Absolute positioning */
+    bottom: 8px; /* 10px from the bottom of the page */
+    right: 20px; /* 10px from the right side of the page */
+    font-size: 12px;
+    color: #ffffff96; /* Neon magenta color */
+}
+
+.small-profile-container {
+    position: fixed; /* Agar tetap di tempat saat halaman di-scroll */
+    bottom: 10px; /* Jarak dari bawah halaman */
+    right: 10px; /* Jarak dari sisi kanan halaman */
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Background semi-transparan */
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffff; /* Efek neon glow */
+}
+
+.small-profile-photo {
+    width: 65; /* Ukuran foto lebih kecil */
+    height: 65px;
+    border-radius: 50%; /* Membuat foto bulat */
+    margin-right: 10px;
+    border: 2px solid #00ffff; /* Neon cyan border */
+}
+
+.small-profile-details p {
+    margin: 0;
+    font-size: 14px; /* Ukuran teks lebih kecil */
+    color: #ffffff; /* Teks putih */
+}
